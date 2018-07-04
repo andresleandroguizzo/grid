@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+	<style>
+	.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	padding: 1px;
+	background-color: rgb(0,0,0);
+	}
+	.grid-container div{
+	background-color: rgb(255,255,255);
+	margin: 1px;
+	font-size: 30px;
+	text-align: center;
+	}
+	.col2{
+		grid-column-start: 2;
+  		grid-column-end: 4;
+	}
+	.row2{
+		grid-row-start: 2;
+  		grid-row-end: 5;
+	}
+	.fullrow{
+		grid-column: span 5;
+	}
+	.row6{
+		grid-column: 2/3;
+		grid-row-start: 7;
+  		grid-row-end: 9;
+	}
+	.col5{
+		grid-column-start: 3;
+  		grid-column-end: 5;
+	}
+	.row7{
+		grid-row-start: 8;
+  		grid-row-end: 10;
+	}
+	.col6{
+		grid-column-start: 4;
+  		grid-column-end: 6;
+  	}
+  	.square{
+  		grid-row-start: 9;
+  		grid-row-end: 11;
+  		grid-column-start: 2;
+  		grid-column-end: 5;
+  	}
+  	#titol {
+  	font-weight: bold;
+  }
+  	
+	</style>
+</head>
+
+<body>
+	<div class="grid-container">
+	
+	<div id="titol">Degree</div>
+	<div class="col2" id="titol">Student</div>
+	<div id="titol">Age</div>
+	<div id="titol"">Course</div>
+	<div class="row2">Computer Science</div>
+	<div>Pepito</div>
+	<div>G</div>
+	<div>22</div>
+	<div>1r</div>
+	<div>Jack</div>
+	<div>Meier</div>
+	<div>94</div>
+	<div>????</div>
+	<div>John</div>
+	<div>Brown</div>
+	<div>18</div>
+	<div>4rt</div>
+	<div>Electrical Engineering</div>
+	<div>Aina</div>
+	<div>Soler</div>
+	<div>23</div>
+	<div>4rt</div>
+	<div class="fullrow">Random tiem</div>
+	<div>A</div>
+	<div class="row6">B</div>
+	<div class="col5">C</div>
+	<div>E</div>
+	<div class="row7">A</div>
+	<div>C</div>
+	<div class="col6">D</div>
+	<div>C</div>
+	<div class="square">B</div>
+	<div>C</div>
+	<div>A</div>
+
+	</div>
+</body>
+
+
+</html>
